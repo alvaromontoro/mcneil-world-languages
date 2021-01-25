@@ -1,0 +1,92 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
+}
+
+h1.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.container {
+  width: 90%;
+  max-width: 990px;
+  margin: auto auto;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.languages a {
+  background: transparent;
+  color: #369;
+  border: 0.25rem solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.25rem;
+  transition: all 0.5s;
+  margin: 0.5rem;
+  font-family: Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.languages a:focus,
+.languages a:hover {
+  color: #258;
+  background: #e0f0ff;
+}
+
+svg {
+  overflow: hidden;
+}
+
+svg #us,
+svg #mx,
+svg #es,
+svg #fr,
+svg #de,
+svg #it {
+  opacity: 0.75;
+  transition: opacity 0.5s, fill 0.5s;
+}
+
+#es:hover,
+#mx:hover,
+#us:hover,
+#de:hover,
+#it:hover,
+#fr:hover,
+#map.es #es,
+#map.es #mx,
+#map.us #us,
+#map.fr #fr,
+#map.it #it,
+#map.de #de {
+  opacity: 1;
+  fill: black;
+}
+
+/* 
+svg .flag,
+svg .flagpole {
+  transform: translate(0, -100vw);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+svg:hover .flag,
+svg:hover .flagpole {
+  transform: translate(0, 0);
+}
+*/
