@@ -79,6 +79,96 @@ svg #it {
 #map.it #it,
 #map.de #de {
   opacity: 1;
-  fill: black;
   cursor: pointer;
+}
+
+#map text {
+  display: none;
+}
+
+#talking-horse-mini,
+#talking-horse-mini-mx {
+  pointer-events: none;
+  display: none;
+}
+
+#us:hover ~ g #speech-bubble-en,
+#map.us #speech-bubble-en,
+#es:hover ~ g #speech-bubble-es,
+#map.es #speech-bubble-es,
+#mx:hover ~ g #speech-bubble-mx,
+#map.es #speech-bubble-mx,
+#it:hover ~ g #speech-bubble-it,
+#map.it #speech-bubble-it,
+#de:hover ~ g #speech-bubble-de,
+#map.de #speech-bubble-de,
+#fr:hover ~ g #speech-bubble-fr,
+#map.fr #speech-bubble-fr {
+  display: block !important;
+}
+
+#us:hover ~ #talking-horse-mini,
+#map.us #talking-horse-mini {
+  display: block;
+  x: 200;
+  y: 200;
+}
+
+#mx:hover ~ #talking-horse-mini-mx,
+#map.es #talking-horse-mini-mx {
+  display: block;
+  x: 196;
+  y: 265;
+}
+
+#es:hover ~ #talking-horse-mini,
+#map.es #talking-horse-mini {
+  display: block;
+  x: 536;
+  y: 173;
+}
+
+#fr:hover ~ #talking-horse-mini,
+#map.fr #talking-horse-mini {
+  display: block;
+  x: 556;
+  y: 143;
+}
+
+#de:hover ~ #talking-horse-mini,
+#map.de #talking-horse-mini {
+  display: block;
+  x: 586;
+  y: 123;
+}
+
+#it:hover ~ #talking-horse-mini,
+#map.it #talking-horse-mini {
+  display: block;
+  x: 586;
+  y: 153;
+}
+
+#us:hover ~ #speech-bubble::before,
+#map.us #speech-bubble::before {
+  content: "Hello!";
+}
+
+.container.horse {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#horse {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: 3rem;
+}
+
+.container.horse span {
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
