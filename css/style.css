@@ -12,7 +12,7 @@ body {
 }
 
 h1.container {
-  margin-top: 1rem;
+  padding-top: 2rem;
   margin-bottom: 1rem;
   text-align: center;
   font-weight: 300;
@@ -93,21 +93,28 @@ svg #it {
 }
 
 #us:hover ~ g #speech-bubble-en,
-#map.us #speech-bubble-en,
 #es:hover ~ g #speech-bubble-es,
-#map.es #speech-bubble-es,
 #mx:hover ~ g #speech-bubble-mx,
-#map.es #speech-bubble-mx,
 #it:hover ~ g #speech-bubble-it,
-#map.it #speech-bubble-it,
 #de:hover ~ g #speech-bubble-de,
-#map.de #speech-bubble-de,
 #fr:hover ~ g #speech-bubble-fr,
+/* #us:focus ~ g #speech-bubble-en,
+#es:focus ~ g #speech-bubble-es,
+#mx:focus ~ g #speech-bubble-mx,
+#it:focus ~ g #speech-bubble-it,
+#de:focus ~ g #speech-bubble-de,
+#fr:focus ~ g #speech-bubble-fr, */
+#map.us #speech-bubble-en,
+#map.es #speech-bubble-es,
+#map.es #speech-bubble-mx,
+#map.it #speech-bubble-it,
+#map.de #speech-bubble-de,
 #map.fr #speech-bubble-fr {
   display: block !important;
 }
 
 #us:hover ~ #talking-horse-mini,
+/* #us:focus ~ #talking-horse-mini, */
 #map.us #talking-horse-mini {
   display: block;
   x: 200;
@@ -115,6 +122,7 @@ svg #it {
 }
 
 #mx:hover ~ #talking-horse-mini-mx,
+/* #mx:focus ~ #talking-horse-mini-mx, */
 #map.es #talking-horse-mini-mx {
   display: block;
   x: 196;
@@ -122,6 +130,7 @@ svg #it {
 }
 
 #es:hover ~ #talking-horse-mini,
+/* #es:focus ~ #talking-horse-mini, */
 #map.es #talking-horse-mini {
   display: block;
   x: 536;
@@ -129,6 +138,7 @@ svg #it {
 }
 
 #fr:hover ~ #talking-horse-mini,
+/* #fr:focus ~ #talking-horse-mini, */
 #map.fr #talking-horse-mini {
   display: block;
   x: 556;
@@ -136,6 +146,7 @@ svg #it {
 }
 
 #de:hover ~ #talking-horse-mini,
+/* #de:focus ~ #talking-horse-mini, */
 #map.de #talking-horse-mini {
   display: block;
   x: 586;
@@ -143,15 +154,11 @@ svg #it {
 }
 
 #it:hover ~ #talking-horse-mini,
+/* #it:focus ~ #talking-horse-mini, */
 #map.it #talking-horse-mini {
   display: block;
   x: 586;
   y: 153;
-}
-
-#us:hover ~ #speech-bubble::before,
-#map.us #speech-bubble::before {
-  content: "Hello!";
 }
 
 .container.horse {
